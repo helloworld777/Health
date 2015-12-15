@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/ivPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/default_feature_front_image" />
+
+    <TextView
+        android:id="@+id/tvPlaceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/ivPicture"
+        android:singleLine="true"
+        android:text="MX形象设计室"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/llFac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPlaceName"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/ivPicture"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ivFavorite1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sub_review_rating_star_off" />
+
+        <ImageView
+            android:id="@+id/ivFavorite2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sub_review_rating_star_off" />
+
+        <ImageView
+            android:id="@+id/ivFavorite3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sub_review_rating_star_off" />
+
+        <ImageView
+            android:id="@+id/ivFavorite4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sub_review_rating_star_off" />
+
+        <ImageView
+            android:id="@+id/ivFavorite5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sub_review_rating_star_off" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llFac"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_toRightOf="@+id/ivPicture"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#808080"
+        android:paddingRight="50dp"
+        android:text="" />
+    <TextView
+        android:id="@+id/tvDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/tvPlace"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#808080"
+        android:text="4.7 km" />
+
+</RelativeLayout>

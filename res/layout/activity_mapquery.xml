@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/etCity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="深圳" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="市内找" >
+        </TextView>
+
+        <AutoCompleteTextView
+            android:id="@+id/searchkey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.88"
+            android:text="篮球场" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:background="@drawable/button_style"
+            android:onClick="searchButtonProcess"
+            android:padding="10dip"
+            android:text="开始" />
+
+        <Button
+            android:id="@+id/btnMoreData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:background="@drawable/button_style"
+            android:onClick="goToNextPage"
+            android:padding="10dip"
+            android:text="下一组数据" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tvDetail"
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:padding="10dp"
+            android:background="#FFF8DC"
+            android:visibility="invisible"
+            android:text="ddddddddddddddddddddddddddddddddddddddddddddd"/>
+    </RelativeLayout>
+
+</LinearLayout>
